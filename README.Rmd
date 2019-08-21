@@ -1,0 +1,35 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# BECS
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Brazilian Economics Time Series (BECS) aims at providing easy and clear information about the communication of the Brazilian Central Bank in the format of a time series. The dataset contains the both the sentiment and dates for the Inflation Reports and COPOM Minutes.
+
+## Installation
+
+You can install the released version of BECS from [GitHub](https://github.com/leonardogeri/BECS) with:
+
+``` r
+devtools::install_github("leonardogeri/BECS")```
+
+## Getting Sentiment from IR
+
+Get the data for the inflation reports by using: 
+
+```{r example}
+library(BECS)
+BECS::RIsentiment
+```
+
